@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('img/img2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vh;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.173);
+    border-radius: 20px;
+}
+
+
+#logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+ul {
+    padding: 0;
+    width: 140px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
