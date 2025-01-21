@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sign up</title>
+    <meta name="description" content="A brief description">
+    <meta name="author" content="your site name">
+
+    <!-- Open Graph Protocols -->
+    <meta poperty="og:title" content="A brief description">
+    <meta poperty="og:type" content="website">
+    <meta poperty="og:url" content="https://www.mysite.com">
+    <meta poperty="og:description" content="A brief description">
+    <meta poperty="og:image" content="../img/logo.webp">
+
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.webp" alt="logo" id="logo">
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <h1>Sign up</h1>
+            <form method="post">
+                <div>
+                    <label for="user_first_name">First Name </label><br>
+                    <input type="text" id="user_first_name" name="user_first_name" required maxlength="14">
+                </div>
+                <div>
+                    <label for="user_last_name">Last Name </label><br>
+                    <input type="text" id="user_last_name" name="user_last_name" required maxlength="14">
+                </div>
+    
+                <div>
+                    <label for="user_email">Email </label><br>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+                <div>
+                    <label for="user_passsword">Password </label><br>
+                    <input type="password" id="user_passsword" name="user_passsword" required minlength="5">
+                </div>
+                <div>
+                    <label for="user_confirm_passsword">Confirm Password </label> <br>
+                    <input type="password" id="user_confirm_passsword" name="user_confirm_passsword" required minlength="5">
+                </div>
+    
+                <div>
+                    <input type="reset">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </main>
+    
+        <footer>
+            <p>Copyright Little Lemon</p>
+        </footer>
+    </div>
+</body>
+</html>

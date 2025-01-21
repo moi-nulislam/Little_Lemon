@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Booking</title>
+    <meta name="description" content="A brief description">
+    <meta name="author" content="your site name">
+
+    <!-- Open Graph Protocols -->
+    <meta poperty="og:title" content="A brief description">
+    <meta poperty="og:type" content="website">
+    <meta poperty="og:url" content="https://www.mysite.com">
+    <meta poperty="og:description" content="A brief description">
+    <meta poperty="og:image" content="../img/logo.webp">
+
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.webp" alt="logo" id="logo">
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <form action="" method="post">
+                <div>
+                    <label for="booking_date">Booking Date</label>
+                    <input type="date" id="booking_date" name="booking_date">
+                </div>
+                <div>
+                    <label for="booking_people">Number of People</label>
+                    <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="if(this.value == 10) {this.nextElementSibling.value = this.value} else {this.nextElementSibling.value = 0 + this.value}">
+                    <output>04</output>
+                </div>
+                <div>
+                    <label for="booking_location">Location</label>
+                    <input id="booking_location" name="booking_location" list="locations">
+                    <datalist id="locations">
+                        <option value="Downtown"></option>
+                        <option value="Uptown"></option>
+                    </datalist>
+                </div>
+                <br>
+                <button type="submit">Book Table</button>
+            </form>
+        </main>
+    
+        <footer>
+            <p>Copyright Little Lemon</p>
+        </footer>
+    </div>
+</body>
+</html>
