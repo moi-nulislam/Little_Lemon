@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.159), rgba(0, 0, 0, 0.941)), 
+        url('img/img2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+
+
+#logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+ul {
+    padding: 0;
+    gap: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul > li > a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+}
+ul > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
